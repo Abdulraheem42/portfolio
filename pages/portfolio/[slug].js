@@ -23,7 +23,7 @@ const PortfolioDetail = ({post}) => {
                     
                     <div className="d-flex mt-5">
                       <p className="fw-bold h5 pe-3">Techs:</p>
-                      {techs.map((item, index) => <span className="me-2">{item},</span>)}
+                      {techs.map((item, index) => <span key={index} className="me-2">{item},</span>)}
                     </div>
 
                     <div className="d-flex">

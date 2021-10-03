@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <FooterWrapper className={`row w-100 py-2`}>
             <div className="col d-flex justify-content-center align-items-center">
-                <img src={Logoimage} width="30px" height="30px" />
+                <img alt="logo" src={Logoimage} width="30px" height="30px" />
                 <span className="mx-2">© </span>
                 <span>{date.getFullYear()}</span>
 

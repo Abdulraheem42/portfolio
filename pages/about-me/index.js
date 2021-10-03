@@ -1,7 +1,5 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from '../../src/components/footer'
-import Navbar from '../../src/components/navbar'
 import { ProfileImg, Html, Css, Javascript, Node, Reactjs, ReactNative, Redux, Bootstrap, Ant, Material } from '../../images';
 import ProfileImgWrapper from '../../src/components/profileImgWrapper';
 
@@ -22,7 +20,7 @@ const AboutMe = () => {
     ]
 
     return (
-    <div className="d-flex flex-column justify-content-center" style={{marginTop: '7rem'}}>
+    <div className="d-flex flex-column justify-content-center" style={{marginTop: "7rem"}}>
         <div className="container">
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
@@ -32,7 +30,7 @@ const AboutMe = () => {
                     <div className="text-center">
                         {languageLogo.map((item, index) => {
                             return (
-                                <img  title={item.title} className="mx-2" src={item.path} width="40px" height="40px" />
+                                <img alt={item.title} key={index} title={item.title} className="mx-2" src={item.path} width="40px" height="40px" />
                             )
                         })}
                     </div>              
@@ -41,14 +39,14 @@ const AboutMe = () => {
                     <div className="text-center">
                         {libraryLogo.map((item, index) => {
                             return (
-                                <img key={index} title={item.title} className="mx-2" src={item.path} width="30px" height="30px" />
+                                <img alt={item.title} key={index} title={item.title} className="mx-2" src={item.path} width="30px" height="30px" />
                             )
                         })}
                     </div>              
                 </div>
                 <div className="col-12">
                     <div className="about_para ps-4">
-                        <p style={{textAlign: 'justify'}}>
+                        <p style={{textAlign: "justify"}}>
                         I'm Abdul Raheem. I am Web designer and developer.  
                         I am undergraduate degree in Bachelor in computer science (BSCS) from Virtual University of Pakistan. 
                         I came into the web field because of the interest and the attractiveness
