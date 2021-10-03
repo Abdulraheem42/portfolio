@@ -1,16 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.about_para{
+  /* border-style: dotted; */
+  border-left: 3px dotted lightgray;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.about_para p{
+  line-height: 24px;
+  word-spacing: 5px;
 }
+.back_btn:hover{
+  cursor: pointer;
+}
+.form-box{
+  width: 70% !important;
+}
+@media(max-width: 999px){
+  .form-box{
+    width: 100% !important
+  }}
 
-* {
-  box-sizing: border-box;
+.form-control:focus{
+  color: #212529 !important;
+  background-color: #fff !important;
+  border-color: #000000 !important;
+  outline: 0 !important;
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%) !important;
+  box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%) !important;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-image: none !important;
+}
+.error-appear{
+  color: #212529 !important;
+  background-color: #fff !important;
+  border-color: #ff0000 !important;
+  outline: 0 !important;
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%) !important;
+  box-shadow: 0 0 0 0.25rem rgb(239 8 8 / 25%) !important
 }
