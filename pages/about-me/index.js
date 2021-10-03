@@ -29,19 +29,19 @@ const AboutMe = () => {
                     <ProfileImgWrapper ProfileImg={ProfileImg} />
                 </div>
                 <div className="col-12 mt-4 mb-3">
-                    <div class="text-center">
-                        {languageLogo.map(item => {
+                    <div className="text-center">
+                        {languageLogo.map((item, index) => {
                             return (
-                                <img title={item.title} className="mx-2" src={item.path} width="40px" height="40px" />
+                                <img  title={item.title} className="mx-2" src={item.path} width="40px" height="40px" />
                             )
                         })}
                     </div>              
                 </div>
                 <div className="col-12 mb-4">
-                    <div class="text-center">
-                        {libraryLogo.map(item => {
+                    <div className="text-center">
+                        {libraryLogo.map((item, index) => {
                             return (
-                                <img title={item.title} className="mx-2" src={item.path} width="30px" height="30px" />
+                                <img key={index} title={item.title} className="mx-2" src={item.path} width="30px" height="30px" />
                             )
                         })}
                     </div>              
