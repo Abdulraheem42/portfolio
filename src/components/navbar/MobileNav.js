@@ -22,7 +22,7 @@ const MobileNav = () => {
         {name: 'Portfolio', id: '3', link:"/portfolio"},
         {name: 'Contact me', id: '4', link:"/contact-me"},
         {name: 'Resume', id: '5', link:"/resume"},
-        {name: 'Lng', id: '6', link:""},
+        {name: 'Lng', id: '6', link:"https://www.linkedin.com/in/abdul-raheem-93b560122/"},
     ]
     return (
         <NavbarContainer className="container-fluid shadow fixed-top py-2">

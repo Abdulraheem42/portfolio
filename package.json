@@ -12,6 +12,8 @@
     "bootstrap": "^5.1.1",
     "cogo-toast": "^4.2.3",
     "formik": "^2.2.9",
+    "ip": "^1.1.5",
+    "js-cookie": "^3.0.1",
     "next": "11.1.2",
     "prop-types": "^15.7.2",
     "react": "17.0.2",

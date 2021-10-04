@@ -26,7 +26,7 @@ const Navbar = () => {
         {name: 'About me', id: '2', link:"/about-me"},
         {name: 'Portfolio', id: '3', link:"/portfolio"},
         {name: 'Contact me', id: '4', link:"/contact-me"},
-        {name: 'Resume', id: '5', link:"/resume"},
+        {name: 'Resume', id: '5', link:"https://www.linkedin.com/in/abdul-raheem-93b560122/"},
     ]
     return (
         <>
@@ -58,7 +58,9 @@ const Navbar = () => {
                              {navbarItem.map((item, index) => {
                                 return(
                                     <div key={index} className="navItem px-3 h-100">
-                                        <Link className="nav-link active" href={item.link} key={index}>{item.name}</Link>
+                                        {/* <a target={`${item.link.slice(0, 4) == "http" ? "_blank" : null}`}> */}
+                                            <Link className="nav-link active"  href={item.link} key={index}>{item.name}</Link>
+                                        {/* </a> */}
                                     </div>
                                 )
                             })}

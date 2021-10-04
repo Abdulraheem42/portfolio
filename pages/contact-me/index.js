@@ -29,7 +29,7 @@ const handleSubmit = (e, resetForm) => {
         body: JSON.stringify({fullName: e.fullName, email: e.email, message: e.message})  
     };
 
-    fetch(`${process.env.REQUIEST_URL}api/user/send`, requestOptions)
+    fetch(`https://portfolio-backen.herokuapp.com/api/user/send`, requestOptions)
       .then(async res => {
         console.log(res, 'res')
         if(res.ok){

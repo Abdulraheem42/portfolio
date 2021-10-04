@@ -1,11 +1,35 @@
+import React, {useState, useEffect} from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "../src/components/navbar";
 import PictureCard from '../src/components/pictureCard'
 import { Books, Coffee, Resources, Letter, Blog } from '../images';
-import Footer from "../src/components/footer";
+import cogoToast from 'cogo-toast';
+import Cookies from 'js-cookie'
 
 export default function Home() {
+  const date = new Date()
 
+  useEffect(() => {
+    if(!Cookies.get('date')){
+      const requestOptions = {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({fullName: "ali", email: "ali@yopmail.com", message: "Hy! Abudul Raheem Someone seeing your Profile"})  
+      };
+      fetch(`https://portfolio-backen.herokuapp.com/api/user/send`, requestOptions)
+        .then(async res => {
+          if(res.ok){
+            Cookies.set('date', date)
+            return console.log('Your request has been submitted successfully');
+          }
+          else{
+            return console.log(res.statusText || "Some thing went wrong");
+          }
+        })
+    }    
+  }, [])
 
 
   return (
@@ -37,7 +61,6 @@ export default function Home() {
                 </div>
                 <div className="col-lg-6 py-3" style={{height: '320px'}}>
                 <PictureCard 
-                  href="/contact-me"
                   bg_image={Books} 
                   height='100%' 
                   cardname="Academy"
@@ -51,6 +74,7 @@ export default function Home() {
               <div className="row justify-content-between align-content-between">
                 <div className="col-12 py-2" style={{height: '320px'}}>
                 <PictureCard 
+                  href="/contact-me"
                   bg_image={Letter} 
                   height='100%' 
                   cardname="Contact me"

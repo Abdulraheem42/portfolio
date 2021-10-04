@@ -18,7 +18,8 @@ export const Ant = '/images/ant.png'
 export const Material = '/images/material.png'
 export const Bootstrap = '/images/bootstrap.png'
 
-
+// ================Web image=========
+export const HeyU = '/images/heyu.png'
 
 
 
