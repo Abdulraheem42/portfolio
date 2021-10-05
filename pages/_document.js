@@ -5,14 +5,14 @@ export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
-    function styledCom(props){
+    function styledCom(props,App){
       return sheet.collectStyles(<App {...props} />)
     }
     try {
       ctx.renderPage = () =>
         originalRenderPage({
 //           enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
-          enhanceApp: App => styledCom(props)
+          enhanceApp: App => styledCom(props,App)
                            
         })
 
