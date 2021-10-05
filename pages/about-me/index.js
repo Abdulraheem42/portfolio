@@ -47,7 +47,7 @@ const AboutMe = () => {
                 <div className="col-12">
                     <div className="about_para ps-4">
                         <p style={{textAlign: "justify"}}>
-                        I'm Abdul Raheem. I am Web designer and developer.  
+                        I am Abdul Raheem. I am Web designer and developer.  
                         I am undergraduate degree in Bachelor in computer science (BSCS) from Virtual University of Pakistan. 
                         I came into the web field because of the interest and the attractiveness
                         of the internet. I did my best to learn in-depth client side languages ​​and technologies and implement
@@ -60,7 +60,7 @@ const AboutMe = () => {
                         is on these. Because of my interest and field of study, I have also done good work in software
                         development in the health field. Teaching Web design related courses is one of the activities
                         I love and I believe teaching topics to other people can help stabilize information.
-                        The aim of this website is to share what I've learned with others. If you have any questions, I'll be happy to answer. 
+                        The aim of this website is to share what I have learned with others. If you have any questions, I will be happy to answer. 
                         Contact me right now!
                         </p>
                     </div>        
