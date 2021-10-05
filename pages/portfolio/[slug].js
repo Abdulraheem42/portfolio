@@ -23,8 +23,8 @@ const PortfolioDetail = ({post}) => {
                     <p className="lh-lg pt-5">{description}</p>
                     <div className="row">
                         {webLinks?.map((item, index) => {
-                         return <div className="mb-4 col-lg-4 col-sm-12">
-                          <DesignPreviewCard image={item} key={index} />
+                         return <div key={index} className="mb-4 col-lg-4 col-sm-12">
+                          <DesignPreviewCard image={item} />
                           </div>
                         })}
                     </div>
