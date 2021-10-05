@@ -11,7 +11,7 @@ const StyledCard = styled.div`
   transition: 0.4s;
   .preview-btn {
     display: none;
-    color: #fff;
+    color: #000;
     border: 1px solid #fff;
     text-decoration: none;
     padding: 8px 0;
@@ -24,8 +24,9 @@ const StyledCard = styled.div`
     font-size: 16px;
     font-weight: 600;
     &:hover {
-      background-color: #0025ff;
-      border: 1px solid #0025ff;
+      background-color: lightgray;
+      cursor:pointer;
+      border: 1px solid black;
     }
   }
   .preview-image {
@@ -95,24 +96,32 @@ const DesignPreviewCards = ({ image, link }) => {
 
   return (
     <>
-      {/* <Modal
-        visible={modalVisible}
-        onCancel={handleModalClose}
-        width="80%"
-        // bodyStyle={{ height: "100vh", overflowY: "scroll", overflowX: "hidden" }}
-        footer={null}
-      >
-        <img src={image} width="100%" />
-      </Modal> */}
+  {/* <div class="modal-dialog modal-dialog-scrollable" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+      </div> */}
       <StyledCard
         ref={divRef}
-        className="container-fluid"
+        className="container-fluid d-flex justify-content-center align-items-center"
         onMouseLeave={stopScrolling}
         onMouseEnter={startScrolling}
       >
-        <a className="preview-btn" >
+        <button type="button" className="preview-btn text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Preview
-        </a>
+        </button>
         <div className="fixed-container">
           <img src={image} className="preview-image img-fluid" />
         </div>

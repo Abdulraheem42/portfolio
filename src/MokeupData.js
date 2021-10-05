@@ -1,4 +1,4 @@
-import {HeyU} from '../images'
+import {HeyU, Councel, Merkury} from '../images'
 
 export const portfolioData = [
     {
@@ -6,7 +6,7 @@ export const portfolioData = [
         slug: "static-landing-pages", 
         description: "",
         links: "",
-        webLinks: [HeyU, HeyU, HeyU, HeyU],
+        webLinks: [HeyU, Councel, Merkury],
         techs: ['Html5', 'Css3', 'Jquery', 'Media Query', 'Bootsrap'],
         startDate: "Feb/2020",
         endDate: "Apr/2020",  

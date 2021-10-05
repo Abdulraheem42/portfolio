@@ -20,6 +20,8 @@ export const Bootstrap = '/images/bootstrap.png'
 
 // ================Web image=========
 export const HeyU = '/images/heyu.png'
+export const Councel = '/images/councel.png'
+export const Merkury = '/images/merkury.png'
 
 
 
