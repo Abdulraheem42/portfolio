@@ -3,10 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styled from 'styled-components'
 
 const ImageWrapper = styled.div`
+    // background-image: ${props => `url(${props.ProfileImg})`};
+    background-size: contain;
+    background-repeat: no-repeat;
     border-style: dotted;
     border-color: lightgray;
     border-radius: 100%;
-    width: 23%;
+    width: 25%;
     height: 300px;
     @media(max-width: 999px){
         width: 75% !important;
