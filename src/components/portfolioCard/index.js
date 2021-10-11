@@ -23,7 +23,7 @@ transition: all 0.5s ease;
 const PortfolioCard = (props) => {
     const {startDate, endDate, name, id, route, slug} = props.data
     return(
-        <Link href={`/portfolio/${slug}`}>
+        <Link href={`/projects/${slug}`}>
         <PortfolioCardWrapper className="carde row w-100 shadow-sm py-5 px-4 mb-5 rounded d-flex justify-content-between align-items-center">
             <div className="col-sm-12 col-lg-10 d-flex">
                 <p className="mb-0 ">{startDate} to {endDate}</p>

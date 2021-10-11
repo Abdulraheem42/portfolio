@@ -51,10 +51,10 @@ export default function Home() {
                 </div>
                 <div className="col-lg-6 py-3" style={{height: '320px'}}>
                 <PictureCard 
-                  href="/portfolio"
+                  href="/projects"
                   bg_image={Resources} 
                   height='100%' 
-                  cardname="Portfolio"
+                  cardname="Projects"
                   right="20px"
                   bottom= "0px"
                 />

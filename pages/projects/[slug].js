@@ -11,7 +11,7 @@ const PortfolioDetail = ({post}) => {
     return (
         <div className="container" style={{marginTop: '6rem'}}>
             <div className="pt-5">
-                <Link href="/portfolio">
+                <Link href="/projects">
                     <p className="back_btn d-inline">
                         <FaArrowLeft className="me-2" />Back
                     </p>

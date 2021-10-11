@@ -19,7 +19,7 @@ const MobileNav = () => {
     const navbarItem = [
         {name: 'Home', id: '1', link:"/"},
         {name: 'About me', id: '2', link:"/about-me"},
-        {name: 'Portfolio', id: '3', link:"/portfolio"},
+        {name: 'Projects', id: '3', link:"/projects"},
         {name: 'Contact me', id: '4', link:"/contact-me"},
         {name: 'Resume', id: '5', link:"/resume"},
         {name: 'Lng', id: '6', link:"https://www.linkedin.com/in/abdul-raheem-93b560122/"},
